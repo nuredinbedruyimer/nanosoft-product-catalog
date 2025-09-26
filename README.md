@@ -14,6 +14,39 @@ It includes product listing, search & filter, product details, and a simple cart
 - **Static Data**: Products loaded from local data file  
 - **Bonus**: Unit tests for components using **Vitest + React Testing Library**  
 
+# 📂 Project Structure
+
+nanosoft-product-catalog/
+├─ node_modules/
+├─ public/
+├─ src/
+│  ├─ assets/                # Images & static assets
+│  │  └─ images/             # Product images, icons, etc.
+│  ├─ components/            # Reusable UI components
+│  │  ├─ cart/               # Cart-related components
+│  │  │  └─ CartTotal.jsx
+│  │  ├─ searchbar/          # Search bar component
+│  │  │  └─ Searchbar.jsx
+│  │  └─ ProductCard.jsx     # Individual product card component
+│  ├─ context/               # Global state management
+│  │  └─ ShopContext.jsx
+│  ├─ pages/                 # Route pages
+│  │  ├─ CartPage.jsx
+│  │  ├─ HomePage.jsx
+│  │  ├─ ProductDetailsPage.jsx
+│  │  └─ ProductsPage.jsx
+│  ├─ App.jsx                # Main app component with routing
+│  ├─ App.css                # Global styles
+│  ├─ index.css              # Tailwind CSS imports
+│  └─ main.jsx               # Entry point
+├─ .gitignore
+├─ eslint.config.js
+├─ index.html
+├─ package.json
+├─ package-lock.json
+├─ vite.config.js
+├─ vitest.config.js
+└─ README.md
 
 ## 🛠️ Tech Stack
 - **React (Vite)** — Fast build tool and dev server  
@@ -39,3 +72,8 @@ npm install
 ```bash
 npm run dev
 ```
+4. **Run Test**
+```bash
+npm run test
+```
+
