@@ -15,7 +15,7 @@ It includes product listing, search & filter, product details, and a simple cart
 - **Bonus**: Unit tests for components using **Vitest + React Testing Library**  
 
 # 📂 Project Structure
-
+```bash
 nanosoft-product-catalog/
 ├─ node_modules/
 ├─ public/
@@ -47,6 +47,8 @@ nanosoft-product-catalog/
 ├─ vite.config.js
 ├─ vitest.config.js
 └─ README.md
+
+```
 
 ## 🛠️ Tech Stack
 - **React (Vite)** — Fast build tool and dev server  
