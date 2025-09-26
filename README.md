@@ -1,16 +1,41 @@
-# React + Vite
+# 🛒 Mini E-commerce Product Catalog (React + Vite + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive mini e-commerce product catalog built with **React (Vite)**, **Tailwind CSS**, and **React Router**.  
+It includes product listing, search & filter, product details, and a simple cart with totals.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- **Product List**: Show product image, name, price, and stock availability  
+- **Search & Filter**: Search by name and filter by category  
+- **Product Details**: Individual product view with description  
+- **Cart**: Add/remove items, view total price, and shipping fee  
+- **Responsive UI**: Optimized for both mobile and desktop  
+- **Static Data**: Products loaded from local data file  
+- **Bonus**: Unit tests for components using **Vitest + React Testing Library**  
 
-## React Compiler
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
+- **React (Vite)** — Fast build tool and dev server  
+- **React Router DOM** — Client-side routing  
+- **Tailwind CSS** — Utility-first responsive styling  
+- **Context API** — State management for cart and search  
+- **Vitest + React Testing Library** — Unit testing  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Setup & Installation
+
+1. **Clone the repo**
+```bash
+git clone https://github.com/your-username/product-catalog.git
+cd product-catalog
+```
+2. **Install Dependencies**
+```bash
+npm install
+```
+3. **Run The Development Server**
+```bash
+npm run dev
+```
