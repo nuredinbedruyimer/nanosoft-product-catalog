@@ -3,7 +3,7 @@ import { images } from "../../assets/images/index.js"
 import { useLocation } from "react-router-dom";
 import { ShopContext } from "../../context/ShopContext";
 
-const SearchBar = () => {
+const Searchbar = () => {
   const { search, setSearch, showSearch, setShowSearch } =
     useContext(ShopContext);
   const [visible, setVisible] = React.useState(false);
@@ -40,4 +40,4 @@ const SearchBar = () => {
   ) : null;
 };
 
-export default SearchBar;
+export default Searchbar;
