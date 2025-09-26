@@ -8,7 +8,7 @@ export const ShopContext = createContext({
   delivery_fee: 0,
   search: "",
   setSearch: () => {},
-  showSearch: false,
+  showSearch: true,
   setShowSearch: () => {},
 });
 

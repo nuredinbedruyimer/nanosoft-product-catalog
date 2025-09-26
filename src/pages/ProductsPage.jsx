@@ -10,7 +10,7 @@ const ProductsPage = () => {
   const [filterProducts, setFilterProducts] = useState([]);
   const [category, setCategory] = useState([]);
   const [subCategory, setSubCategory] = useState([]);
-  const [sortType, setSortType] = useState("relevant");
+  // const [sortType, setSortType] = useState("relevant");
 
   function applyFilters() {
     let productsCopy = products.slice();
