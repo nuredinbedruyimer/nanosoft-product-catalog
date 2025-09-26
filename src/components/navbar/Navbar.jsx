@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import {images} from "../../assets/images/index"
 import { NavLink, Link } from "react-router-dom";
 import { ShopContext } from "../../context/ShopContext.jsx";
@@ -13,23 +13,16 @@ const Navbar = () => {
       <Link to={"/"}>
         LOGO
       </Link>
-      <ul className="hidden sm:flex gap-5 text-sm text-grey-700">
+      <ul className="hidden sm:flex justify-between w-1/8 gap-5 text-sm text-grey-700">
         <NavLink to="/" className="flex flex-col items-center gap-1">
           <p>HOME</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
-        <NavLink to="/collection" className="flex flex-col items-center gap-1">
+        <NavLink to="/products" className="flex flex-col items-center gap-1">
           <p>COLLECTION</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
-        <NavLink to="/about" className="flex flex-col items-center gap-1">
-          <p>ABOUT</p>
-          <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
-        </NavLink>
-        <NavLink to="/contact" className="flex flex-col items-center gap-1">
-          <p>CONTACT</p>
-          <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
-        </NavLink>
+   
       </ul>
 
       <div className="flex items-center gap-6">
@@ -98,24 +91,12 @@ const Navbar = () => {
           <NavLink
             onClick={() => setVisible(false)}
             className="py-2 p1-6 border"
-            to="/collection"
+            to="/products"
           >
             COLLECTION
           </NavLink>
-          <NavLink
-            onClick={() => setVisible(false)}
-            className="py-2 p1-6 border"
-            to="/about"
-          >
-            ABOUT
-          </NavLink>
-          <NavLink
-            onClick={() => setVisible(false)}
-            className="py-2 p1-6 border"
-            to="/contact"
-          >
-            CONTACT
-          </NavLink>
+    
+    
         </div>
       </div>
     </div>
